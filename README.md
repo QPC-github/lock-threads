@@ -1,5 +1,7 @@
 # Lock Threads
 
+> This is a fork of https://github.com/dessant/lock-threads with updated dependencies + node.js 16 + 1 second delay between requests.
+
 Lock Threads is a GitHub Action that locks closed issues
 and pull requests after a period of inactivity.
 

@@ -1,3 +1,4 @@
+const { setTimeout } = require('timers/promises')
 const core = require('@actions/core');
 const github = require('@actions/github');
 
@@ -54,6 +55,7 @@ class App {
 
     const results = await this.search(type);
     for (const result of results) {
+      await setTimeout(1000)
       const issue = {...repo, issue_number: result.number};
 
       if (comment) {
