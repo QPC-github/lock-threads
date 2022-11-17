@@ -24804,6 +24804,10 @@ class App {
         }
       } else {
         core.setOutput(`${item}s`, '');
+
+        if (logOutput) {
+          core.info(`No new ${item}s to process.`);
+        }
       }
     }
   }
